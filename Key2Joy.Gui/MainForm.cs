@@ -41,7 +41,6 @@ public partial class MainForm : Form, IAcceptAppCommands, IHaveHandleAndInvoke
         this.InitializeComponent();
 
         this.ApplyMinimizedStateIfNeeded(shouldStartMinimized);
-        this.ConfigureStatusLabels();
         this.SetupNotificationIndicator();
         this.PopulateGroupImages();
         this.RegisterListViewEvents();
@@ -109,9 +108,6 @@ public partial class MainForm : Form, IAcceptAppCommands, IHaveHandleAndInvoke
         this.WindowState = shouldMinimize ? FormWindowState.Minimized : FormWindowState.Normal;
         this.ShowInTaskbar = !shouldMinimize;
     }
-
-    private void ConfigureStatusLabels()
-        => this.lblStatusActive.Visible = this.chkArmed.Checked;
 
     private void SetupNotificationIndicator()
     {
@@ -237,9 +233,7 @@ public partial class MainForm : Form, IAcceptAppCommands, IHaveHandleAndInvoke
         this.chkArmed.CheckedChanged -= this.ChkEnabled_CheckedChanged;
         this.chkArmed.Checked = isEnabled;
         this.chkArmed.CheckedChanged += this.ChkEnabled_CheckedChanged;
-
-        this.lblStatusActive.Visible = isEnabled;
-        this.lblStatusInactive.Visible = !isEnabled;
+        this.chkArmed.Text = isEnabled ? "Disconnect" : "Connect";
     }
 
     private MappingProfile CreateNewProfile(string nameSuffix = default)
