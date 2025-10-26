@@ -752,9 +752,6 @@ public partial class MainForm : Form, IAcceptAppCommands, IHaveHandleAndInvoke
         this.SetSelectedProfile(profile);
     }
 
-    private void SaveProfileToolStripMenuItem_Click(object sender, EventArgs e)
-        => MessageBox.Show("When you make changes to a profile, changes are automatically saved. This button is only here to explain that feature to you.", "Profile already saved!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
     private void OpenProfileFolderToolStripMenuItem_Click(object sender, EventArgs e)
     {
         if (this.selectedProfile == null)
