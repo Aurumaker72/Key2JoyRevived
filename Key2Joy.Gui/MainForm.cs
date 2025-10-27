@@ -238,9 +238,7 @@ public partial class MainForm : Form, IAcceptAppCommands, IHaveHandleAndInvoke
 
     private void SetStatusView(bool isEnabled)
     {
-        this.chkArmed.CheckedChanged -= this.ChkEnabled_CheckedChanged;
         this.chkArmed.Checked = isEnabled;
-        this.chkArmed.CheckedChanged += this.ChkEnabled_CheckedChanged;
         this.chkArmed.Text = isEnabled ? "Disconnect" : "Connect";
     }
 
