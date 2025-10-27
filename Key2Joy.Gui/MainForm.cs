@@ -50,6 +50,16 @@ public partial class MainForm : Form, IAcceptAppCommands, IHaveHandleAndInvoke
         this.ConfigureTooltips();
     }
 
+    private void UpdateTitle()
+    {
+        var title = $"Key2Joy - Alpha Version";
+        if (this.selectedProfile != null)
+        {
+            title += $" - {this.selectedProfile.Name}";
+        }
+        this.Text = title;
+    }
+
     private void RefreshMappingGroupMenu()
     {
         var menu = this.groupMappingsByToolStripMenuItem.DropDown;
@@ -223,12 +233,7 @@ public partial class MainForm : Form, IAcceptAppCommands, IHaveHandleAndInvoke
         this.olvMappings.Sort(this.olvColumnTrigger, SortOrder.Ascending);
         this.RefreshMappingsAfterGroupChange();
 
-        this.UpdateSelectedProfileName();
-    }
-
-    private void UpdateSelectedProfileName()
-    {
-        // Stub
+        UpdateTitle();
     }
 
     private void SetStatusView(bool isEnabled)
