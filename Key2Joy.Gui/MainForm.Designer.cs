@@ -34,10 +34,9 @@ namespace Key2Joy.Gui
             this.olvColumnAction = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.olvColumnTrigger = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.pnlActionManagement = new System.Windows.Forms.Panel();
-            this.pnlFiltering = new System.Windows.Forms.Panel();
+            this.btnCreateMapping = new System.Windows.Forms.Button();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.txtFilterLabel = new System.Windows.Forms.Label();
-            this.btnCreateMapping = new System.Windows.Forms.Button();
             this.pnlProfileManagement = new System.Windows.Forms.Panel();
             this.txtProfileName = new System.Windows.Forms.TextBox();
             this.lblProfileName = new System.Windows.Forms.Label();
@@ -94,7 +93,6 @@ namespace Key2Joy.Gui
             this.deviceListControl = new Key2Joy.Gui.DeviceListControl();
             ((System.ComponentModel.ISupportInitialize)(this.olvMappings)).BeginInit();
             this.pnlActionManagement.SuspendLayout();
-            this.pnlFiltering.SuspendLayout();
             this.pnlProfileManagement.SuspendLayout();
             this.menMainMenu.SuspendLayout();
             this.pnlMainMenu.SuspendLayout();
@@ -123,7 +121,7 @@ namespace Key2Joy.Gui
             this.olvMappings.Margin = new System.Windows.Forms.Padding(4);
             this.olvMappings.Name = "olvMappings";
             this.olvMappings.RowHeight = 25;
-            this.olvMappings.Size = new System.Drawing.Size(812, 611);
+            this.olvMappings.Size = new System.Drawing.Size(811, 611);
             this.olvMappings.TabIndex = 84;
             this.olvMappings.UseCellFormatEvents = true;
             this.olvMappings.UseCompatibleStateImageBehavior = false;
@@ -149,54 +147,19 @@ namespace Key2Joy.Gui
             // 
             // pnlActionManagement
             // 
-            this.pnlActionManagement.Controls.Add(this.pnlFiltering);
             this.pnlActionManagement.Controls.Add(this.btnCreateMapping);
             this.pnlActionManagement.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlActionManagement.Location = new System.Drawing.Point(0, 680);
             this.pnlActionManagement.Margin = new System.Windows.Forms.Padding(4);
             this.pnlActionManagement.Name = "pnlActionManagement";
             this.pnlActionManagement.Padding = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.pnlActionManagement.Size = new System.Drawing.Size(812, 54);
+            this.pnlActionManagement.Size = new System.Drawing.Size(811, 54);
             this.pnlActionManagement.TabIndex = 0;
-            // 
-            // pnlFiltering
-            // 
-            this.pnlFiltering.Controls.Add(this.txtFilter);
-            this.pnlFiltering.Controls.Add(this.txtFilterLabel);
-            this.pnlFiltering.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlFiltering.Location = new System.Drawing.Point(6, 7);
-            this.pnlFiltering.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlFiltering.Name = "pnlFiltering";
-            this.pnlFiltering.Padding = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.pnlFiltering.Size = new System.Drawing.Size(374, 40);
-            this.pnlFiltering.TabIndex = 2;
-            // 
-            // txtFilter
-            // 
-            this.txtFilter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtFilter.Location = new System.Drawing.Point(96, 7);
-            this.txtFilter.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFilter.Name = "txtFilter";
-            this.txtFilter.Size = new System.Drawing.Size(272, 25);
-            this.txtFilter.TabIndex = 1;
-            this.txtFilter.TextChanged += new System.EventHandler(this.TxtFilter_TextChanged);
-            // 
-            // txtFilterLabel
-            // 
-            this.txtFilterLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txtFilterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilterLabel.Location = new System.Drawing.Point(6, 7);
-            this.txtFilterLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.txtFilterLabel.Name = "txtFilterLabel";
-            this.txtFilterLabel.Size = new System.Drawing.Size(90, 26);
-            this.txtFilterLabel.TabIndex = 89;
-            this.txtFilterLabel.Text = "Search Filter:";
-            this.txtFilterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnCreateMapping
             // 
             this.btnCreateMapping.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnCreateMapping.Location = new System.Drawing.Point(632, 7);
+            this.btnCreateMapping.Location = new System.Drawing.Point(631, 7);
             this.btnCreateMapping.Margin = new System.Windows.Forms.Padding(4);
             this.btnCreateMapping.Name = "btnCreateMapping";
             this.btnCreateMapping.Size = new System.Drawing.Size(174, 40);
@@ -205,49 +168,70 @@ namespace Key2Joy.Gui
             this.btnCreateMapping.UseVisualStyleBackColor = true;
             this.btnCreateMapping.Click += new System.EventHandler(this.BtnCreateMapping_Click);
             // 
+            // txtFilter
+            // 
+            this.txtFilter.Location = new System.Drawing.Point(328, 7);
+            this.txtFilter.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFilter.Name = "txtFilter";
+            this.txtFilter.Size = new System.Drawing.Size(272, 25);
+            this.txtFilter.TabIndex = 1;
+            this.txtFilter.TextChanged += new System.EventHandler(this.TxtFilter_TextChanged);
+            // 
+            // txtFilterLabel
+            // 
+            this.txtFilterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFilterLabel.Location = new System.Drawing.Point(266, 7);
+            this.txtFilterLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txtFilterLabel.Name = "txtFilterLabel";
+            this.txtFilterLabel.Size = new System.Drawing.Size(54, 25);
+            this.txtFilterLabel.TabIndex = 89;
+            this.txtFilterLabel.Text = "Search";
+            this.txtFilterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // pnlProfileManagement
             // 
             this.pnlProfileManagement.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlProfileManagement.Controls.Add(this.txtFilter);
+            this.pnlProfileManagement.Controls.Add(this.txtFilterLabel);
             this.pnlProfileManagement.Controls.Add(this.txtProfileName);
             this.pnlProfileManagement.Controls.Add(this.lblProfileName);
+            this.pnlProfileManagement.Controls.Add(this.chkArmed);
             this.pnlProfileManagement.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlProfileManagement.Location = new System.Drawing.Point(0, 30);
             this.pnlProfileManagement.Margin = new System.Windows.Forms.Padding(4);
             this.pnlProfileManagement.Name = "pnlProfileManagement";
             this.pnlProfileManagement.Padding = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.pnlProfileManagement.Size = new System.Drawing.Size(812, 39);
+            this.pnlProfileManagement.Size = new System.Drawing.Size(811, 39);
             this.pnlProfileManagement.TabIndex = 82;
             // 
             // txtProfileName
             // 
-            this.txtProfileName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtProfileName.Location = new System.Drawing.Point(96, 7);
+            this.txtProfileName.Location = new System.Drawing.Point(75, 7);
             this.txtProfileName.Margin = new System.Windows.Forms.Padding(4);
             this.txtProfileName.Name = "txtProfileName";
-            this.txtProfileName.Size = new System.Drawing.Size(710, 25);
+            this.txtProfileName.Size = new System.Drawing.Size(183, 25);
             this.txtProfileName.TabIndex = 85;
             this.txtProfileName.TextChanged += new System.EventHandler(this.TxtProfileName_TextChanged);
             // 
             // lblProfileName
             // 
-            this.lblProfileName.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblProfileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfileName.Location = new System.Drawing.Point(6, 7);
             this.lblProfileName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProfileName.Name = "lblProfileName";
-            this.lblProfileName.Size = new System.Drawing.Size(90, 25);
+            this.lblProfileName.Size = new System.Drawing.Size(61, 25);
             this.lblProfileName.TabIndex = 88;
-            this.lblProfileName.Text = "Profile Name:";
+            this.lblProfileName.Text = "Profile";
             this.lblProfileName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // chkArmed
             // 
             this.chkArmed.Appearance = System.Windows.Forms.Appearance.Button;
             this.chkArmed.Dock = System.Windows.Forms.DockStyle.Right;
-            this.chkArmed.Location = new System.Drawing.Point(704, 0);
+            this.chkArmed.Location = new System.Drawing.Point(697, 7);
             this.chkArmed.Margin = new System.Windows.Forms.Padding(4);
             this.chkArmed.Name = "chkArmed";
-            this.chkArmed.Size = new System.Drawing.Size(108, 30);
+            this.chkArmed.Size = new System.Drawing.Size(108, 25);
             this.chkArmed.TabIndex = 81;
             this.chkArmed.Text = "Connect";
             this.chkArmed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -265,7 +249,7 @@ namespace Key2Joy.Gui
             this.menMainMenu.Location = new System.Drawing.Point(0, 0);
             this.menMainMenu.Name = "menMainMenu";
             this.menMainMenu.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
-            this.menMainMenu.Size = new System.Drawing.Size(704, 30);
+            this.menMainMenu.Size = new System.Drawing.Size(811, 30);
             this.menMainMenu.TabIndex = 81;
             this.menMainMenu.Text = "menuStrip1";
             // 
@@ -584,27 +568,27 @@ namespace Key2Joy.Gui
             // reportAProblemToolStripMenuItem
             // 
             this.reportAProblemToolStripMenuItem.Name = "reportAProblemToolStripMenuItem";
-            this.reportAProblemToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.reportAProblemToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.reportAProblemToolStripMenuItem.Text = "Report a Problem";
             this.reportAProblemToolStripMenuItem.Click += new System.EventHandler(this.ReportAProblemToolStripMenuItem_Click);
             // 
             // viewSourceCodeToolStripMenuItem
             // 
             this.viewSourceCodeToolStripMenuItem.Name = "viewSourceCodeToolStripMenuItem";
-            this.viewSourceCodeToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.viewSourceCodeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.viewSourceCodeToolStripMenuItem.Text = "View Source Code";
             this.viewSourceCodeToolStripMenuItem.Click += new System.EventHandler(this.ViewSourceCodeToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(209, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Image = global::Key2Joy.Gui.Properties.Resources.information;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -618,12 +602,11 @@ namespace Key2Joy.Gui
             // pnlMainMenu
             // 
             this.pnlMainMenu.Controls.Add(this.menMainMenu);
-            this.pnlMainMenu.Controls.Add(this.chkArmed);
             this.pnlMainMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMainMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMainMenu.Margin = new System.Windows.Forms.Padding(4);
             this.pnlMainMenu.Name = "pnlMainMenu";
-            this.pnlMainMenu.Size = new System.Drawing.Size(812, 30);
+            this.pnlMainMenu.Size = new System.Drawing.Size(811, 30);
             this.pnlMainMenu.TabIndex = 85;
             // 
             // pnlNotificationsParent
@@ -633,7 +616,7 @@ namespace Key2Joy.Gui
             this.pnlNotificationsParent.Location = new System.Drawing.Point(0, 69);
             this.pnlNotificationsParent.Margin = new System.Windows.Forms.Padding(4);
             this.pnlNotificationsParent.Name = "pnlNotificationsParent";
-            this.pnlNotificationsParent.Size = new System.Drawing.Size(812, 0);
+            this.pnlNotificationsParent.Size = new System.Drawing.Size(811, 0);
             this.pnlNotificationsParent.TabIndex = 89;
             // 
             // splitContainer
@@ -658,7 +641,7 @@ namespace Key2Joy.Gui
             this.splitContainer.Panel2.Controls.Add(this.deviceListControl);
             this.splitContainer.Panel2MinSize = 80;
             this.splitContainer.Size = new System.Drawing.Size(915, 734);
-            this.splitContainer.SplitterDistance = 812;
+            this.splitContainer.SplitterDistance = 811;
             this.splitContainer.SplitterWidth = 5;
             this.splitContainer.TabIndex = 90;
             // 
@@ -670,7 +653,7 @@ namespace Key2Joy.Gui
             this.deviceListControl.Location = new System.Drawing.Point(0, 0);
             this.deviceListControl.Margin = new System.Windows.Forms.Padding(5);
             this.deviceListControl.Name = "deviceListControl";
-            this.deviceListControl.Size = new System.Drawing.Size(98, 734);
+            this.deviceListControl.Size = new System.Drawing.Size(99, 734);
             this.deviceListControl.TabIndex = 0;
             // 
             // MainForm
@@ -692,8 +675,6 @@ namespace Key2Joy.Gui
             this.SizeChanged += new System.EventHandler(this.MainForm_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.olvMappings)).EndInit();
             this.pnlActionManagement.ResumeLayout(false);
-            this.pnlFiltering.ResumeLayout(false);
-            this.pnlFiltering.PerformLayout();
             this.pnlProfileManagement.ResumeLayout(false);
             this.pnlProfileManagement.PerformLayout();
             this.menMainMenu.ResumeLayout(false);
@@ -763,7 +744,6 @@ namespace Key2Joy.Gui
         private System.Windows.Forms.ToolStripMenuItem generateOppositePressStateMappingsToolStripMenuItem;
         private BrightIdeasSoftware.ObjectListView olvMappings;
         private System.Windows.Forms.TextBox txtFilter;
-        private System.Windows.Forms.Panel pnlFiltering;
         private System.Windows.Forms.Label txtFilterLabel;
         private System.Windows.Forms.Panel pnlNotificationsParent;
         private System.Windows.Forms.SplitContainer splitContainer;
