@@ -666,7 +666,6 @@ namespace Key2Joy.Gui
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(930, 639);
             this.Name = "MainForm";
             this.Text = "Key2Joy - Alpha Version";
