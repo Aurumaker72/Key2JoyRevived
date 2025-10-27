@@ -1,17 +1,10 @@
 
-> [!CAUTION]  
-> This project is not actively maintained. Development is sporadic and handled by a single developer, so it cannot be relied upon.
-> 
-> There are currently some critical [bugs](https://github.com/luttje/Key2Joy/issues) that make it largely unusable—input jitter and unregistered key releases are common issues.  
-> [Version 0.6.0](https://github.com/luttje/Key2Joy/releases/tag/0.6.0) appears more stable, so it's recommended for now.
-> 
-> Contributions are welcome! If you'd like to help, feel free to submit a [Pull Request](https://github.com/luttje/Key2Joy/pulls).
-> 
-> Thanks for your understanding.
+> [!NOTE]
+> This project is a fork of [Key2Joy](https://github.com/luttje/Key2Joy).
 
 <div align="center">
 
-# ![](Key2Joy.Gui/Graphics/Icons/icon256.png?raw=true)<br> Key2Joy
+# ![](Key2Joy.Gui/Graphics/Icons/icon256.png?raw=true)<br> Key2JoyRevived
 
 **Simulate a Joystick/Controller/Gamepad using your keyboard, mouse or other triggers.**
 
