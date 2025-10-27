@@ -226,7 +226,10 @@ public partial class MainForm : Form, IAcceptAppCommands, IHaveHandleAndInvoke
         this.UpdateSelectedProfileName();
     }
 
-    private void UpdateSelectedProfileName() => this.txtProfileName.Text = this.selectedProfile.Name;
+    private void UpdateSelectedProfileName()
+    {
+        // Stub
+    }
 
     private void SetStatusView(bool isEnabled)
     {
@@ -238,7 +241,7 @@ public partial class MainForm : Form, IAcceptAppCommands, IHaveHandleAndInvoke
 
     private MappingProfile CreateNewProfile(string nameSuffix = default)
     {
-        MappingProfile profile = new($"{this.txtProfileName.Text}{nameSuffix}", this.selectedProfile?.MappedOptions);
+        MappingProfile profile = new($"{this.selectedProfile?.Name}{nameSuffix}", this.selectedProfile?.MappedOptions);
 
         this.SetSelectedProfile(profile);
 
@@ -699,12 +702,6 @@ public partial class MainForm : Form, IAcceptAppCommands, IHaveHandleAndInvoke
         }
 
         this.deviceListControl.RefreshDevices();
-    }
-
-    private void TxtProfileName_TextChanged(object sender, EventArgs e)
-    {
-        this.selectedProfile.Name = this.txtProfileName.Text;
-        this.selectedProfile.Save();
     }
 
     private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
