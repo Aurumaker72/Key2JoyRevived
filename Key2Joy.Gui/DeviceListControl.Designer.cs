@@ -32,6 +32,7 @@ partial class DeviceListControl
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblDevices = new System.Windows.Forms.Label();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.lblListPlaceholder = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +41,7 @@ partial class DeviceListControl
             this.pnlDevices.AutoSize = true;
             this.pnlDevices.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlDevices.Location = new System.Drawing.Point(0, 93);
-            this.pnlDevices.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlDevices.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDevices.Name = "pnlDevices";
             this.pnlDevices.Size = new System.Drawing.Size(98, 0);
             this.pnlDevices.TabIndex = 0;
@@ -51,7 +52,7 @@ partial class DeviceListControl
             this.pnlHeader.Controls.Add(this.lblDevices);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(98, 58);
             this.pnlHeader.TabIndex = 1;
@@ -74,7 +75,7 @@ partial class DeviceListControl
             // 
             this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRefresh.Location = new System.Drawing.Point(0, 58);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(98, 35);
             this.btnRefresh.TabIndex = 2;
@@ -82,16 +83,29 @@ partial class DeviceListControl
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.BtnRefresh_Click);
             // 
+            // lblListPlaceholder
+            // 
+            this.lblListPlaceholder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblListPlaceholder.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lblListPlaceholder.Location = new System.Drawing.Point(0, 107);
+            this.lblListPlaceholder.Name = "lblListPlaceholder";
+            this.lblListPlaceholder.Size = new System.Drawing.Size(98, 118);
+            this.lblListPlaceholder.TabIndex = 3;
+            this.lblListPlaceholder.Text = "No devices found.\r\n\r\nTry connecting the Joy2Key device.";
+            this.lblListPlaceholder.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // DeviceListControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.lblListPlaceholder);
             this.Controls.Add(this.pnlDevices);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.pnlHeader);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DeviceListControl";
             this.Size = new System.Drawing.Size(98, 579);
             this.pnlHeader.ResumeLayout(false);
@@ -106,4 +120,5 @@ partial class DeviceListControl
     private System.Windows.Forms.Panel pnlHeader;
     private System.Windows.Forms.Label lblDevices;
     private System.Windows.Forms.Button btnRefresh;
+    private System.Windows.Forms.Label lblListPlaceholder;
 }
