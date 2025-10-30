@@ -38,11 +38,11 @@ partial class DeviceControl
             // 
             // picImage
             // 
-            this.picImage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picImage.Image = global::Key2Joy.Gui.Properties.Resources.disconnect;
-            this.picImage.Location = new System.Drawing.Point(8, 26);
+            this.picImage.Location = new System.Drawing.Point(4, 4);
+            this.picImage.Margin = new System.Windows.Forms.Padding(4);
             this.picImage.Name = "picImage";
-            this.picImage.Size = new System.Drawing.Size(77, 49);
+            this.picImage.Size = new System.Drawing.Size(36, 36);
             this.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picImage.TabIndex = 0;
             this.picImage.TabStop = false;
@@ -50,45 +50,51 @@ partial class DeviceControl
             // lblDevice
             // 
             this.lblDevice.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblDevice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDevice.Location = new System.Drawing.Point(8, 75);
+            this.lblDevice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDevice.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lblDevice.Location = new System.Drawing.Point(9, 46);
+            this.lblDevice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDevice.Name = "lblDevice";
-            this.lblDevice.Size = new System.Drawing.Size(77, 18);
+            this.lblDevice.Size = new System.Drawing.Size(90, 24);
             this.lblDevice.TabIndex = 1;
             this.lblDevice.Text = "Device Name";
             this.lblDevice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblIndex
             // 
-            this.lblIndex.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblIndex.Location = new System.Drawing.Point(8, 8);
+            this.lblIndex.Location = new System.Drawing.Point(48, 4);
+            this.lblIndex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIndex.Name = "lblIndex";
-            this.lblIndex.Size = new System.Drawing.Size(77, 18);
+            this.lblIndex.Size = new System.Drawing.Size(51, 36);
             this.lblIndex.TabIndex = 2;
             this.lblIndex.Text = "?";
-            this.lblIndex.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblIndex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pnlDevice
             // 
+            this.pnlDevice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlDevice.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pnlDevice.Controls.Add(this.picImage);
             this.pnlDevice.Controls.Add(this.lblIndex);
             this.pnlDevice.Controls.Add(this.lblDevice);
-            this.pnlDevice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDevice.Location = new System.Drawing.Point(0, 0);
+            this.pnlDevice.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDevice.Name = "pnlDevice";
-            this.pnlDevice.Padding = new System.Windows.Forms.Padding(8);
-            this.pnlDevice.Size = new System.Drawing.Size(93, 101);
+            this.pnlDevice.Padding = new System.Windows.Forms.Padding(9, 10, 9, 10);
+            this.pnlDevice.Size = new System.Drawing.Size(108, 80);
             this.pnlDevice.TabIndex = 3;
             // 
             // DeviceControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.pnlDevice);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DeviceControl";
-            this.Size = new System.Drawing.Size(93, 101);
+            this.Size = new System.Drawing.Size(108, 132);
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
             this.pnlDevice.ResumeLayout(false);
             this.ResumeLayout(false);
