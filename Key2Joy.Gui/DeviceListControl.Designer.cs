@@ -60,7 +60,7 @@ partial class DeviceListControl
             // 
             this.lblDevices.BackColor = System.Drawing.Color.Transparent;
             this.lblDevices.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDevices.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDevices.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDevices.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblDevices.Location = new System.Drawing.Point(0, 0);
             this.lblDevices.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);

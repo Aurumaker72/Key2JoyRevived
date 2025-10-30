@@ -1,4 +1,4 @@
-﻿namespace Key2Joy.Gui;
+namespace Key2Joy.Gui;
 
 partial class DeviceControl
 {
@@ -50,7 +50,7 @@ partial class DeviceControl
             // lblDevice
             // 
             this.lblDevice.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblDevice.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDevice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDevice.Location = new System.Drawing.Point(8, 75);
             this.lblDevice.Name = "lblDevice";
             this.lblDevice.Size = new System.Drawing.Size(77, 18);
@@ -61,7 +61,7 @@ partial class DeviceControl
             // lblIndex
             // 
             this.lblIndex.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblIndex.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.lblIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblIndex.Location = new System.Drawing.Point(8, 8);
             this.lblIndex.Name = "lblIndex";
             this.lblIndex.Size = new System.Drawing.Size(77, 18);

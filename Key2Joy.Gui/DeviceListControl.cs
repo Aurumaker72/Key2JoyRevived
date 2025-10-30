@@ -32,7 +32,7 @@ public partial class DeviceListControl : UserControl
             this.pnlDevices.Controls.Add(new Label()
             {
                 Text = "No physical or simulated devices found. Try arming the mappings.",
-                Font = new Font("Arial", 8, FontStyle.Italic),
+                Font = new Font("Microsoft Sans Serif", 8, FontStyle.Italic),
                 Padding = new Padding(5),
                 Dock = DockStyle.Top,
                 Height = 100,
