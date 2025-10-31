@@ -52,10 +52,10 @@ partial class DeviceControl
             this.lblDevice.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblDevice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDevice.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lblDevice.Location = new System.Drawing.Point(9, 46);
+            this.lblDevice.Location = new System.Drawing.Point(0, 40);
             this.lblDevice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDevice.Name = "lblDevice";
-            this.lblDevice.Size = new System.Drawing.Size(90, 24);
+            this.lblDevice.Size = new System.Drawing.Size(108, 40);
             this.lblDevice.TabIndex = 1;
             this.lblDevice.Text = "Device Name";
             this.lblDevice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -80,9 +80,7 @@ partial class DeviceControl
             this.pnlDevice.Controls.Add(this.lblIndex);
             this.pnlDevice.Controls.Add(this.lblDevice);
             this.pnlDevice.Location = new System.Drawing.Point(0, 0);
-            this.pnlDevice.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDevice.Name = "pnlDevice";
-            this.pnlDevice.Padding = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.pnlDevice.Size = new System.Drawing.Size(108, 80);
             this.pnlDevice.TabIndex = 3;
             // 
@@ -92,7 +90,6 @@ partial class DeviceControl
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.pnlDevice);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DeviceControl";
             this.Size = new System.Drawing.Size(108, 132);
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
