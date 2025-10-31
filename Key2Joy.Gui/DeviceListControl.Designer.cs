@@ -92,7 +92,7 @@ partial class DeviceListControl
             this.lblListPlaceholder.Name = "lblListPlaceholder";
             this.lblListPlaceholder.Size = new System.Drawing.Size(98, 118);
             this.lblListPlaceholder.TabIndex = 3;
-            this.lblListPlaceholder.Text = "No devices found.\r\n\r\nTry connecting the Joy2Key device.";
+            this.lblListPlaceholder.Text = "No devices found.\r\n\r\nTry connecting the Key2Joy device.";
             this.lblListPlaceholder.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // DeviceListControl
