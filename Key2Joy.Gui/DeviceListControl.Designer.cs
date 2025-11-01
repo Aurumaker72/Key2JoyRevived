@@ -42,7 +42,7 @@ partial class DeviceListControl
             // 
             this.pnlDevices.AutoSize = true;
             this.pnlDevices.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlDevices.Location = new System.Drawing.Point(0, 123);
+            this.pnlDevices.Location = new System.Drawing.Point(0, 486);
             this.pnlDevices.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDevices.Name = "pnlDevices";
             this.pnlDevices.Size = new System.Drawing.Size(88, 0);
@@ -80,7 +80,7 @@ partial class DeviceListControl
             this.lblListPlaceholder.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblListPlaceholder.Location = new System.Drawing.Point(0, 5);
             this.lblListPlaceholder.Name = "lblListPlaceholder";
-            this.lblListPlaceholder.Size = new System.Drawing.Size(88, 118);
+            this.lblListPlaceholder.Size = new System.Drawing.Size(88, 481);
             this.lblListPlaceholder.TabIndex = 3;
             this.lblListPlaceholder.Text = "No devices found.\r\n\r\nTry connecting the Key2Joy device.";
             this.lblListPlaceholder.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -106,7 +106,7 @@ partial class DeviceListControl
             this.pnlDeviceListContainer.Location = new System.Drawing.Point(5, 93);
             this.pnlDeviceListContainer.Name = "pnlDeviceListContainer";
             this.pnlDeviceListContainer.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.pnlDeviceListContainer.Size = new System.Drawing.Size(88, 123);
+            this.pnlDeviceListContainer.Size = new System.Drawing.Size(88, 486);
             this.pnlDeviceListContainer.TabIndex = 4;
             // 
             // DeviceListControl
