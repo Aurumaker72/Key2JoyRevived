@@ -78,8 +78,9 @@ namespace Key2Joy.Gui
             this.Controls.Add(this.pnlSave);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ConfigForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Key2Joy User Configurations";
+            this.Text = "Configuration";
             this.pnlSave.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
