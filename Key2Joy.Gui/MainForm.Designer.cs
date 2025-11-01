@@ -552,7 +552,7 @@ namespace Key2Joy.Gui
             this.userConfigurationsToolStripMenuItem.Image = global::Key2Joy.Gui.Properties.Resources.cog;
             this.userConfigurationsToolStripMenuItem.Name = "userConfigurationsToolStripMenuItem";
             this.userConfigurationsToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
-            this.userConfigurationsToolStripMenuItem.Text = "User Configurations";
+            this.userConfigurationsToolStripMenuItem.Text = "Configuration";
             this.userConfigurationsToolStripMenuItem.Click += new System.EventHandler(this.UserConfigurationsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
