@@ -309,8 +309,9 @@ namespace Key2Joy.Gui
             // 
             this.exitProgramToolStripMenuItem.Image = global::Key2Joy.Gui.Properties.Resources.door_out;
             this.exitProgramToolStripMenuItem.Name = "exitProgramToolStripMenuItem";
+            this.exitProgramToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.exitProgramToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
-            this.exitProgramToolStripMenuItem.Text = "Exit Program";
+            this.exitProgramToolStripMenuItem.Text = "Exit";
             this.exitProgramToolStripMenuItem.Click += new System.EventHandler(this.ExitProgramToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
