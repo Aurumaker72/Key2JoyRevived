@@ -39,7 +39,7 @@ namespace Key2Joy.Gui
             this.pnlConfigurations.AutoSize = true;
             this.pnlConfigurations.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlConfigurations.Location = new System.Drawing.Point(0, 0);
-            this.pnlConfigurations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlConfigurations.Margin = new System.Windows.Forms.Padding(4);
             this.pnlConfigurations.Name = "pnlConfigurations";
             this.pnlConfigurations.Size = new System.Drawing.Size(526, 0);
             this.pnlConfigurations.TabIndex = 0;
@@ -48,7 +48,7 @@ namespace Key2Joy.Gui
             // 
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSave.Location = new System.Drawing.Point(418, 4);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(104, 26);
             this.btnSave.TabIndex = 0;
@@ -61,7 +61,7 @@ namespace Key2Joy.Gui
             this.pnlSave.Controls.Add(this.btnSave);
             this.pnlSave.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlSave.Location = new System.Drawing.Point(0, 118);
-            this.pnlSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlSave.Margin = new System.Windows.Forms.Padding(4);
             this.pnlSave.Name = "pnlSave";
             this.pnlSave.Padding = new System.Windows.Forms.Padding(4);
             this.pnlSave.Size = new System.Drawing.Size(526, 34);
@@ -76,10 +76,9 @@ namespace Key2Joy.Gui
             this.ClientSize = new System.Drawing.Size(526, 152);
             this.Controls.Add(this.pnlConfigurations);
             this.Controls.Add(this.pnlSave);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximumSize = new System.Drawing.Size(544, 770);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ConfigForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Key2Joy User Configurations";
             this.pnlSave.ResumeLayout(false);
             this.ResumeLayout(false);
